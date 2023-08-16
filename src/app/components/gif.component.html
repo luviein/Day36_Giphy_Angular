@@ -1,0 +1,12 @@
+
+<!-- truthy value, if value is more than 1 its true -->
+<div *ngIf="receivedItems">
+  <div *ngFor="let i of receivedItems">
+    <img src="{{i}}">
+  </div>
+</div>
+
+<ng-template #noContent>
+  <h2>No Content</h2>
+</ng-template>
+
